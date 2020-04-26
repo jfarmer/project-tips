@@ -7,6 +7,8 @@
 - [Screen and Routes](#Screen-and-Routes)
 - [Wireframes, etc](#Wireframes-etc)
 - [Designing Database Schema](#Designing-Database-Schema)
+- [What To Do When Stuck](#What-To-Do-When-Stuck)
+- [Choosing Libraries / Modules](#Choosing-Libraries--Modules)
 
 ## Overall Work Structure
 
@@ -71,3 +73,42 @@ Your final design can differ significantly from your wireframes.
 ## Designing Database Schema
 
 Use a tool like [DBDesigner](https://www.dbdesigner.net/) to design your database schema. All tiers are free for Davidson students if you sign up for an academic account. Here's an example: <https://dbdesigner.page.link/HuDLQ6FRjjd1qfgr6>.
+
+## What To Do When Stuck
+
+> The most effective debugging tool is still careful thought, coupled with judiciously placed print statements.
+>
+> — [Brian Kernighan][wiki-kernighan], "Unix for Beginners" (1979)
+
+First, under **no** circumstances ask the following unless you're at a genuine loss: "I'm getting X error, what is broken?" Nobody is psychic. They're just going to ask you to undertake the same process and you might as well undertake it yourself.
+
+1. Understand the error message
+1. Understand what a stack trace is telling you
+1. If your program is crashing there is some line of code in your program that is either throwing an error itself or calls code that throws the error. The stack trace tells you where this is
+1. Google the error message
+1. Pay attention to the dates of everything you're reading. A 5-year-old answer or solution might
+
+If your program isn't working as expect then it means something, somewhere in your code isn't doing what you expect or doesn't have the value you expect. Use the scientific method to isolate the part of the code. Use `console.log` to verify things are what you expect.
+
+If you come to a teacher for help, they are going to point at every variable/value in the relevant section of code and ask you to `console.log` it. Do that preemptively so you don't get blocked waiting for help!
+
+## Choosing Libraries / Modules
+
+No matter what module you choose, you're going to get stuck at some point. The module can't do what you want or if it can, you don't know how to make it do what you want.
+
+You need to pick modules that are actively maintained and have a large [mind share][wiki-mind-share]. The more people using a module the more likely people are asking/answering questions about it, the more likely people have invested in good documentation/tutorials, the more likely that someone you ask for help will know about it, etc.
+
+For modules on `npm`, always look up:
+
+1. How long ago was the last version published?
+1. How many people are downloading the module each week?
+
+A module that hasn't been updated in over a year and has few weekly downloads is probably abandoned. A very stable module not got get updated regularly, but it should have many, many downloads.
+
+For example, [Express][npm-express] hasn't been updated in over a year but it has ~13 million weekly downloads. This is because Express is intended to be minimal, stable, and extensible.
+
+READ THE MENU BEFORE ORDERING.
+
+[wiki-kernighan]: https://en.wikipedia.org/wiki/Brian_Kernighan
+[wiki-mind-share]: https://en.wikipedia.org/wiki/Mind_share
+[npm-express]: https://www.npmjs.com/package/express
