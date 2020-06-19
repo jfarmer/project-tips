@@ -20,8 +20,9 @@
 1. Sync regularly to revise the plan. At least once per day is *required*, we strongly recommend once in the morning and once in the late mid-day (9AM and 3PM, say).
 1. When starting a feature, first...
    - Make wireframes of all the relevant screens a user sees
-   - Design a database schema
-1. Every feature involves some combination of changes to the screens a user sees and to the database (making new components, changing or removing old ones, etc.).
+   - If you're using a back-end, design a database schema
+   - If you're using an interactive front-end, outline the main pieces of data, what they look like, and what they represent in your code
+1. Every feature involves some combination of changes to the screens a user sees, the way the underlying information is organized + stored, and how those two interact with each other.
 1. Don't **overplan**. Plans change. Spending 1 day coming up with a super-detailed plan around something that's likely to change before the end of the week is a bad use of time. The detail in your plans should be proportional to the likelihood that they will change.
 
 For example, before starting a feature I'd...
@@ -45,6 +46,7 @@ Any serious misalignment will be much clearer and you'll get a broader range of 
 
 You can do the same with a database schema design, though. Or ideas for the presentation. Or...
 
+<!--
 ## Screen and Routes
 
 Someone using a website sees a series of screens, each at a different URL. For example, a user might:
@@ -61,6 +63,7 @@ The user sees **three** screens here, but there are **four** routes at work:
 1. `GET /profile` — See their profile (or whatever page they redirect to after logging in, it could be `GET /` again)
 
 The user thinks in screens, while the developer tends to think more in routes. It's important to think in both depending on the situation.
+-->
 
 ## Wireframes, etc
 
@@ -70,9 +73,11 @@ They help you and your team get and stay on the same page more quickly. This all
 
 Your final design can differ significantly from your wireframes.
 
+<!--
 ## Designing Database Schema
 
-Use a tool like [DBDesigner](https://www.dbdesigner.net/) to design your database schema. All tiers are free for Davidson students if you sign up for an academic account. Here's an example: <https://dbdesigner.page.link/HuDLQ6FRjjd1qfgr6>.
+This only applies if you're using a back-end. Use a tool like [DBDesigner](https://www.dbdesigner.net/) to design your database schema. All tiers are free for Davidson students if you sign up for an academic account. Here's an example: <https://dbdesigner.page.link/HuDLQ6FRjjd1qfgr6>.
+-->
 
 ## What To Do When Stuck
 
@@ -88,9 +93,22 @@ First, under **no** circumstances ask the following unless you're at a genuine l
 1. Google the error message
 1. Pay attention to the dates of everything you're reading. A 5-year-old answer or solution might
 
-If your program isn't working as expect then it means something, somewhere in your code isn't doing what you expect or doesn't have the value you expect. Use the scientific method to isolate the part of the code. Use `console.log` to verify things are what you expect.
+If your program isn't working as expect then it means something, somewhere in your code isn't doing what you expect or doesn't have the value you expect. That means...
+
+- Using the scientific method to isolate the part of the code
+- Use `console.log` to verify things are what you expect
+- Double-check that your HTML/CSS are valid using the [W3's HTML Validator][url-validator]
+- Use your browser's Inspector + Developer Console to get visibility into how the browser is rendering the page (and why it looks different from what you expect).
+
+
+## Save Time Before Asking For Help
 
 If you come to a teacher for help, they are going to point at every variable/value in the relevant section of code and ask you to `console.log` it. Do that preemptively so you don't get blocked waiting for help!
+
+Are you _sure_ it's not a typo? Believing it's not a typo isn't enough. Being 99% confident it's not a typo isn't enough. Your brain fills in gaps and convinces you it didn't. You should...
+
+- Isolate the parts that aren't working as you expect (scientific method) and compare to a known-working example
+- Place a known-working snippet of code right next to the not-working snippet of code so that typos are more obvious. For example, if you think two lines of code are identical, put them on two separate lines in a new file. You'll see right away if their length is different, which tells you they're not the same.
 
 ## Choosing Libraries / Modules
 
@@ -112,3 +130,4 @@ READ THE MENU BEFORE ORDERING.
 [wiki-kernighan]: https://en.wikipedia.org/wiki/Brian_Kernighan
 [wiki-mind-share]: https://en.wikipedia.org/wiki/Mind_share
 [npm-express]: https://www.npmjs.com/package/express
+[url-validator]: https://validator.w3.org/
