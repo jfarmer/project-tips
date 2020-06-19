@@ -65,13 +65,31 @@ The user sees **three** screens here, but there are **four** routes at work:
 The user thinks in screens, while the developer tends to think more in routes. It's important to think in both depending on the situation.
 -->
 
-## Wireframes, etc
+## Wireframes, etc.
+
+Wireframes are meant to be a [storyboard][wiki-storyboard] for your website. They are meant to communicate the basic layout of any given page and key interactions. They should be quick to create and quick to change. If you couldn't draw it quicklky using a piece of paper and a permanent marker then they're probably too detailed.
+
+For example, when making a new page, you should be able to sketch out 2-3 different ideas as wireframes within 5-10 minutes.
 
 Wireframes aren't a contract, they're a communication tool. They're the visual equivalent of putting your thoughts into words. Once they're outside yourself they're easier for you to refine and get feedback on.
 
 They help you and your team get and stay on the same page more quickly. This allows people to work independently without deviating too far from the intended work.
 
-Your final design can differ significantly from your wireframes.
+Your final design can (and often will) differ significantly from your wireframes.
+
+### Wireframe Tools
+
+You can make wireframes by hand and share photos with your team. But many people prefer using wireframing tools like [Balsamiq](https://balsamiq.com/). Don't get bogged down in the tooling. If you can't figure out how to get the tool to work for you within 10-15 minutes then find another way.
+
+### Wireframe Guides
+
+If you've never made wireframes before, here are some resources. **Remember**, there are no "absolute" rules here. The goal is to communicate high-level design decisions with your teammates and interested third parties (e.g., instructors, people willing to give feedback, etc.).
+
+For example, many guides will talk about "low-fidelity" vs "high-fidelity" wireframes. This is really only relevant if you require several rounds of design review before committing to a final design or if the final design is particularly complex/subtle. That's _probably_ not the case with your capstone project.
+
+- <https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe/>
+- <https://www.smashingmagazine.com/2020/04/wireframe-design-success/>
+- <https://www.uxpin.com/studio/ui-design/what-is-a-wireframe-designing-your-ux-backbone/>
 
 <!--
 ## Designing Database Schema
@@ -131,3 +149,4 @@ READ THE MENU BEFORE ORDERING.
 [wiki-mind-share]: https://en.wikipedia.org/wiki/Mind_share
 [npm-express]: https://www.npmjs.com/package/express
 [url-validator]: https://validator.w3.org/
+[wiki-storyboard]: https://en.wikipedia.org/wiki/Storyboard
