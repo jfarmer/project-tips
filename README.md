@@ -105,11 +105,14 @@ This only applies if you're using a back-end. Use a tool like [DBDesigner](https
 
 First, under **no** circumstances ask the following unless you're at a genuine loss: "I'm getting X error, what is broken?" Nobody is psychic. They're just going to ask you to undertake the same process and you might as well undertake it yourself.
 
+1. Know where to look for any potential error messages (the terminal, the browser console, etc.)
 1. Understand the error message
-1. Understand what a stack trace is telling you
+1. Understand what a stack trace is telling you (if present in the code)
 1. If your program is crashing there is some line of code in your program that is either throwing an error itself or calls code that throws the error. The stack trace tells you where this is
 1. Google the error message
-1. Pay attention to the dates of everything you're reading. A 5-year-old answer or solution might
+1. Pay attention to the dates of everything you're reading. A 10-year-old solution might reference tools or techniques that no longer work or are no longer relevant. That doesn't mean it's _wrong_, but keep it in mind if you find some code snippet and it doesn't do what it's supposed to do.
+
+### My Program/Website/etc. Is Broken. What's Wrong?
 
 If your program isn't working as expect then it means something, somewhere in your code isn't doing what you expect or doesn't have the value you expect. That means...
 
