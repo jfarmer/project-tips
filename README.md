@@ -112,6 +112,8 @@ First, under **no** circumstances ask the following unless you're at a genuine l
 1. Google the error message
 1. Pay attention to the dates of everything you're reading. A 10-year-old solution might reference tools or techniques that no longer work or are no longer relevant. That doesn't mean it's _wrong_, but keep it in mind if you find some code snippet and it doesn't do what it's supposed to do.
 
+You might not know how to do some of the steps above and that's fine. Asking "My website doesn't look like I want, but I don't know where to look to see what might be wrong" makes it 100x easier for someone else to help you (instructors included).
+
 ### My Program/Website/etc. Is Broken. What's Wrong?
 
 If your program isn't working as expect then it means something, somewhere in your code isn't doing what you expect or doesn't have the value you expect. That means...
@@ -120,7 +122,6 @@ If your program isn't working as expect then it means something, somewhere in yo
 - Use `console.log` to verify things are what you expect
 - Double-check that your HTML/CSS are valid using the [W3's HTML Validator][url-validator]
 - Use your browser's Inspector + Developer Console to get visibility into how the browser is rendering the page (and why it looks different from what you expect).
-
 
 ## Save Time Before Asking For Help
 
