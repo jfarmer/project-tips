@@ -24,6 +24,12 @@
    - If you're using an interactive front-end, outline the main pieces of data, what they look like, and what they represent in your code
 1. Every feature involves some combination of changes to the screens a user sees, the way the underlying information is organized + stored, and how those two interact with each other.
 1. Don't **overplan**. Plans change. Spending 1 day coming up with a super-detailed plan around something that's likely to change before the end of the week is a bad use of time. The detail in your plans should be proportional to the likelihood that they will change.
+1. Be honest about procrastination. Everyone has work that's in their "comfort zone". People who feel comfortable with code will gravitate towards code, people who feel comfortable with organizing will gravitate to organizing, etc. Reflect honestly on why you're doing what you're doing.
+
+   Are you filling out spreadsheets because it's critical to the success of the project or because it calms you down? Are you writing JavaScript because it's an essential feature or because it's a way to take your mind off harder, possibly non-technical problems?
+1. Use libraries. Now isn't the time to write things from scratch. If there's a library that does what you want, use it. Yes, you have to weigh the amount of time it'd take to get the library working vs. doing it yourself, but most beginners WAY underestimate how long it'd take to do something themselves and WAY overestimate how hard it is to use a library.
+
+   That said, sometimes a library you find really does suck and winds up being more trouble than it's worth. Often you don't realize this until you're neck deep in implementing something. That's the way it goes; plan accordingly.
 
 For example, before starting a feature I'd...
 
